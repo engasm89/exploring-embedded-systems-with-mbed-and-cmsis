@@ -2,6 +2,42 @@
  * Course: Exploring Embedded Systems With Mbed And Cmsis
  * Platform: Embedded Systems
  * Author: Ashraf S A AlMadhoun
+ * 
+ * Description:
+ * This code demonstrates the core concepts taught in the "Exploring Embedded Systems With Mbed And Cmsis" course.
+ * It provides a practical implementation that students can study, modify, and
+ * use as a foundation for their own projects.
+ * 
+ * Learning Objectives:
+ * - Understand the fundamental principles covered in this course
+ * - Practice implementing the concepts with real code
+ * - Build a working example that can be extended
+ * 
+ * Hardware Requirements:
+ * - Development board (Embedded Systems)
+ * - Components as specified in CIRCUIT.md
+ * - USB cable for programming
+ * 
+ * Pin Connections:
+ * Refer to CIRCUIT.md for detailed wiring diagrams and pin assignments.
+ * 
+ * Usage:
+ * 1. Review the code structure and comments
+ * 2. Connect hardware according to CIRCUIT.md
+ * 3. Upload code to your development board
+ * 4. Monitor serial output for debugging
+ * 
+ * Course Link: https://www.udemy.com/course/exploring-embedded-systems-with-mbed-and-cmsis/
+ * Repository: https://github.com/engasm89/exploring-embedded-systems-with-mbed-and-cmsis
+ * 
+ * Copyright (c) 2025 Ashraf S A AlMadhoun
+ * Licensed under MIT License
+ */
+
+/*
+ * Course: Exploring Embedded Systems With Mbed And Cmsis
+ * Platform: Embedded Systems
+ * Author: Ashraf S A AlMadhoun
  * Purpose: Auto-generated metadata block to document the learning goals.
  * Notes: Auto-generated metadata block (2025-11-18)
  */
@@ -46,7 +82,7 @@ void nvic_enable_irq(uint8_t irq_num) { // Enable IRQ using NVIC
 
 // Main demonstrating MBED/CMSIS style initialization
 // Main routine: orchestrates the exploring embedded systems with mbed and cmsis scenario
-int main(void) { // Entry point
+int main(void) { // Program entry point point
   printf("Exploring Embedded Systems with MBED and CMSIS\n"); // Title output
   systick_init(1000u); // Configure SysTick for 1000 ticks
   nvic_enable_irq(15u); // Enable simulated IRQ 15
@@ -54,6 +90,6 @@ int main(void) { // Entry point
     SYST_CVR++; // Increment current tick
     printf("Tick=%u CSR=0x%08X\n", SYST_CVR, SYST_CSR); // Print tick and control state
   } // End loop
-  return 0; // Exit success
-} // End main
+  return 0; // Exit successfully
+} // End of main function
 
