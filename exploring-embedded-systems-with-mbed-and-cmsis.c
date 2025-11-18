@@ -1,3 +1,11 @@
+/*
+ * Course: Exploring Embedded Systems With Mbed And Cmsis
+ * Platform: Embedded Systems
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for status prints
 #include <stdint.h> // Include fixed-width integer types
 
@@ -29,6 +37,7 @@ void nvic_enable_irq(uint8_t irq_num) { // Enable IRQ using NVIC
 } // End function
 
 // Main demonstrating MBED/CMSIS style initialization
+// Main routine: orchestrates the exploring embedded systems with mbed and cmsis scenario
 int main(void) { // Entry point
   printf("Exploring Embedded Systems with MBED and CMSIS\n"); // Title output
   systick_init(1000u); // Configure SysTick for 1000 ticks
